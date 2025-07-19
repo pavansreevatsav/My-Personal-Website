@@ -1023,3 +1023,58 @@ body.dark-mode .certification-card:hover { box-shadow: 0 20px 60px rgba(0,0,0,0.
 .email-option-button:hover { background-color: var(--hover-button-bg); color: #fff; }
 body.dark-mode .email-options-dropdown { border-color: var(--dot-color); }
 html { scroll-behavior: smooth; }
+
+/* --- Improved Header Action Links --- */
+.header-action-link {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600 !important; /* Use important to ensure override */
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease-out;
+}
+
+.header-action-link i {
+    font-size: 1.2em !important; /* Makes icon slightly larger than text */
+    transition: transform 0.25s ease-out;
+}
+
+.header-action-link:hover {
+    background-color: var(--cta-secondary-bg);
+    border-color: var(--cta-secondary-border);
+    color: var(--primary-red) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+body.dark-mode .header-action-link:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.header-action-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Ensure the email button aligns nicely */
+.header-right {
+    gap: 8px !important;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .header-action-link span {
+        display: none; /* Hides the text on smaller screens */
+    }
+    .header-action-link {
+        padding: 10px; /* Makes the icon-only button a nice square */
+        border-radius: 50%;
+    }
+    .header-email-main-button {
+        display: none; /* Hides the full email on mobile for space */
+    }
+}

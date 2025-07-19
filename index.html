@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- START: NEW & IMPROVED FAVICON CODE -->
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="apple-touch-icon" href="icons/favicon.svg">
+    <link rel="mask-icon" href="icons/mask-icon.svg" color="#e53935">
+    <!-- END: NEW & IMPROVED FAVICON CODE -->
+    
     <title>Pavan Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for icons -->
@@ -12,21 +19,20 @@
     <canvas id="dotsCanvas"></canvas>
 
     <header>
+        <!-- The left section is now cleaner -->
         <div class="header-left">
             <div class="theme-toggle">
                 <input type="checkbox" id="themeSwitch" class="theme-switch__input">
                 <label for="themeSwitch" class="theme-switch__label">
-                    <span></span> <!-- This will be the toggle switch -->
+                    <span></span>
                 </label>
             </div>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
         </div>
 
+        <!-- The right section has improved icons and new classes for styling -->
         <nav class="header-right">
             <div class="header-email-button-container">
+                <!-- The main email display remains for clarity -->
                 <button type="button" class="header-email-main-button" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-envelope"></i> pavansrivatsav.akula@gmail.com
                 </button>
@@ -39,14 +45,21 @@
                     </a>
                 </div>
             </div>
-            <a href="https://www.linkedin.com/in/pavansreevatsavakula/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i> LinkedIn
+
+            <!-- The links now have a "header-action-link" class for styling -->
+            <a href="https://www.linkedin.com/in/pavansreevatsavakula/" target="_blank" rel="noopener noreferrer" class="header-action-link">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
             </a>
-            <a href="Personal%20Website/Documents/ResumeWebsite.pdf" download="Pavan_Sreevatsav_Akula_Resume.pdf">
-                <i class="fas fa-file-alt"></i> Resume
+            <a href="Personal%20Website/Documents/ResumeWebsite.pdf" download="Pavan_Sreevatsav_Akula_Resume.pdf" class="header-action-link">
+                <!-- Icon changed to clearly signify "download" -->
+                <i class="fas fa-file-arrow-down"></i>
+                <span>Resume</span>
             </a>
-            <a href="#contact" aria-label="Contact">
-                <i class="fas fa-envelope"></i> Contact
+            <a href="#contact" class="header-action-link">
+                <!-- Icon changed to a more engaging "contact me" symbol -->
+                <i class="fas fa-headset"></i>
+                <span>Contact</span>
             </a>
         </nav>
     </header>
@@ -499,81 +512,105 @@
             </div>
         </section>
 
-        <section id="certifications" class="content-section">
-            <h2>CERTIFICATIONS</h2>
-            <div class="certification-grid">
-                <article class="certification-card" data-tilt-card>
-                    <div class="card-shine-effect"></div>
-                    <div class="card-border-glow"></div>
-                    <div class="cert-logo-container">
-                        <img src="https://images.contentstack.io/v3/assets/blt36c2e63521272fdc/bltd42dcd7c5c4c108c/63c71c13d1f34304558a361d/GCIH.png" alt="GCIH Certification Logo" class="cert-logo-img">
-                    </div>
-                    <div class="cert-content-area">
-                        <h3 class="cert-title">GIAC Certified Incident Handler (GCIH)</h3>
-                        <p class="cert-issuer">Global Information Assurance Certification</p>
-                        <div class="cert-meta">
-                            <span class="cert-id">Analyst No: 50881</span>
-                            <span class="cert-validity"><i class="fas fa-calendar-check"></i> Feb 2025 - Feb 2029</span>
-                        </div>
-                    </div>
-                    <a href="https://www.credly.com/badges/68c0eb6a-08d8-445d-b169-4926a1d6062e" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="Verify GCIH Certification">
-                        <i class="fas fa-check-circle"></i> Verified
-                    </a>
-                </article>
-                <article class="certification-card" data-tilt-card>
-                    <div class="card-shine-effect"></div>
-                    <div class="card-border-glow"></div>
-                    <div class="cert-logo-container">
-                        <img src="https://media.licdn.com/dms/image/v2/D5622AQEs7h0bBouAhQ/feedshare-shrink_800/feedshare-shrink_800/0/1720535985422?e=1751500800&v=beta&t=vQ6_gU6dEv_unzK5FiA_QqCkdeIgZggzoNwRuzYbHSs" alt="EC-Council ECIH Logo" class="cert-logo-img">
-                    </div>
-                    <div class="cert-content-area">
-                        <h3 class="cert-title">EC-Council Certified Incident Handler</h3>
-                        <p class="cert-issuer">EC-Council</p>
-                        <div class="cert-meta">
-                            <span class="cert-id">ID: ECC1873290564</span>
-                            <span class="cert-validity"><i class="fas fa-calendar-check"></i> Jan 2023 - Jan 2026</span>
-                        </div>
-                    </div>
-                    <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=+ZMl1Ymtb/WdN6NmvEP5+Bc4LEa0NKqJJnDR1sofLIg=" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="Verify EC-Council Certification">
-                        <i class="fas fa-check-circle"></i> Verified
-                    </a>
-                </article>
-                <article class="certification-card sans-training" data-tilt-card>
-                    <div class="card-shine-effect"></div>
-                    <div class="card-border-glow"></div>
-                    <div class="cert-logo-container">
-                        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGQR_t9fdMykg/company-logo_200_200/company-logo_200_200/0/1711998388620/sans_institute_logo?e=1754524800&v=beta&t=XBfZveH2imHuWVY8b3lyavFwMUg4QtPTlrKOkPeQztM" alt="SANS Institute Logo" class="cert-logo-img">
-                    </div>
-                    <div class="cert-content-area">
-                        <h3 class="cert-title">SANS SEC504: Hacker Tools, Techniques, and Incident Handling</h3>
-                        <p class="cert-issuer">SANS Institute Training</p>
-                        <div class="cert-meta">
-                            <span class="cert-id">CPE: 38 Credits</span>
-                        </div>
-                    </div>
-                    <a href="Personal%20Website/Documents/SANS504coursecompletion.pdf" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="View SANS SEC504 Completion Certificate">
-                        <i class="fas fa-file-pdf"></i> View Certificate
-                    </a>
-                </article>
-                <article class="certification-card sans-training" data-tilt-card>
-                    <div class="card-shine-effect"></div>
-                    <div class="card-border-glow"></div>
-                    <div class="cert-logo-container">
-                        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGQR_t9fdMykg/company-logo_200_200/company-logo_200_200/0/1711998388620/sans_institute_logo?e=1754524800&v=beta&t=XBfZveH2imHuWVY8b3lyavFwMUg4QtPTlrKOkPeQztM" alt="SANS Institute Logo" class="cert-logo-img">
-                    </div>
-                    <div class="cert-content-area">
-                        <h3 class="cert-title">SANS FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics</h3>
-                        <p class="cert-issuer">SANS Institute Training</p>
-                        <div class="cert-meta">
-                            <span class="cert-id">CPE: 36 Credits</span>
-                        </div>
-                    </div>
-                    <a href="Personal%20Website/Documents/SANSFOR508coursecompletion.pdf" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="View SANS FOR508 Completion Certificate">
-                        <i class="fas fa-file-pdf"></i> View Certificate
-                    </a>
-                </article>
+<section id="certifications" class="content-section">
+    <h2>CERTIFICATIONS</h2>
+    <div class="certification-grid">
+        <article class="certification-card" data-tilt-card>
+            <div class="card-shine-effect"></div>
+            <div class="card-border-glow"></div>
+            <div class="cert-logo-container">
+                <img src="https://images.contentstack.io/v3/assets/blt36c2e63521272fdc/bltd42dcd7c5c4c108c/63c71c13d1f34304558a361d/GCIH.png" alt="GCIH Certification Logo" class="cert-logo-img">
             </div>
-        </section>
+            <div class="cert-content-area">
+                <h3 class="cert-title">GIAC Certified Incident Handler (GCIH)</h3>
+                <p class="cert-issuer">Global Information Assurance Certification</p>
+                <div class="cert-meta">
+                    <span class="cert-id">Analyst No: 50881</span>
+                    <span class="cert-validity"><i class="fas fa-calendar-check"></i> Feb 2025 - Feb 2029</span>
+                </div>
+            </div>
+            <a href="https://www.credly.com/badges/68c0eb6a-08d8-445d-b169-4926a1d6062e" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="Verify GCIH Certification">
+                <i class="fas fa-check-circle"></i> Verify Credential
+            </a>
+        </article>
+        <article class="certification-card" data-tilt-card>
+            <div class="card-shine-effect"></div>
+            <div class="card-border-glow"></div>
+            <div class="cert-logo-container">
+                <img src="Personal%20Website/Images/EC-Council.png" alt="EC-Council ECIH Logo" class="cert-logo-img">
+            </div>
+            <div class="cert-content-area">
+                <h3 class="cert-title">EC-Council Certified Incident Handler</h3>
+                <p class="cert-issuer">EC-Council</p>
+                <div class="cert-meta">
+                    <span class="cert-id">ID: ECC1873290564</span>
+                    <span class="cert-validity"><i class="fas fa-calendar-check"></i> Jan 2023 - Jan 2026</span>
+                </div>
+            </div>
+            <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=+ZMl1Ymtb/WdN6NmvEP5+Bc4LEa0NKqJJnDR1sofLIg=" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="Verify EC-Council Certification">
+                <i class="fas fa-check-circle"></i> Verify Credential
+            </a>
+        </article>
+        
+        <!-- START: UPDATED IMMERSIVE LABS CERTIFICATION -->
+        <article class="certification-card" data-tilt-card>
+            <div class="card-shine-effect"></div>
+            <div class="card-border-glow"></div>
+            <div class="cert-logo-container">
+                <!-- Using the local logo file you provided -->
+                <img src="Personal%20Website/Images/ImmersiveLabsBadge.png" alt="Immersive Labs Logo" class="cert-logo-img">
+            </div>
+            <div class="cert-content-area">
+                <h3 class="cert-title">Digital Forensics Lab - Expert Level</h3>
+                <p class="cert-issuer">Immersive Labs</p>
+                <div class="cert-meta">
+                    <!-- Displaying CPE Credits -->
+                    <span class="cert-id">CPE Credits: 8</span>
+                </div>
+            </div>
+            <!-- Added the verification badge with the link you provided -->
+            <a href="https://us.immersivelabs.com/share/achievement/e7d4411e7d38b581738fa779346fbea3" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="Verify Immersive Labs Certification">
+                <i class="fas fa-check-circle"></i> Verify Credential
+            </a>
+        </article>
+        <!-- END: UPDATED IMMERSIVE LABS CERTIFICATION -->
+        
+        <article class="certification-card sans-training" data-tilt-card>
+            <div class="card-shine-effect"></div>
+            <div class="card-border-glow"></div>
+            <div class="cert-logo-container">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGQR_t9fdMykg/company-logo_200_200/company-logo_200_200/0/1711998388620/sans_institute_logo?e=1754524800&v=beta&t=XBfZveH2imHuWVY8b3lyavFwMUg4QtPTlrKOkPeQztM" alt="SANS Institute Logo" class="cert-logo-img">
+            </div>
+            <div class="cert-content-area">
+                <h3 class="cert-title">SANS SEC504: Hacker Tools, Techniques, and Incident Handling</h3>
+                <p class="cert-issuer">SANS Institute Training</p>
+                <div class="cert-meta">
+                    <span class="cert-id">CPE: 38 Credits</span>
+                </div>
+            </div>
+            <a href="Personal%20Website/Documents/SANS504coursecompletion.pdf" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="View SANS SEC504 Completion Certificate">
+                <i class="fas fa-file-pdf"></i> View Certificate
+            </a>
+        </article>
+        <article class="certification-card sans-training" data-tilt-card>
+            <div class="card-shine-effect"></div>
+            <div class="card-border-glow"></div>
+            <div class="cert-logo-container">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGQR_t9fdMykg/company-logo_200_200/company-logo_200_200/0/1711998388620/sans_institute_logo?e=1754524800&v=beta&t=XBfZveH2imHuWVY8b3lyavFwMUg4QtPTlrKOkPeQztM" alt="SANS Institute Logo" class="cert-logo-img">
+            </div>
+            <div class="cert-content-area">
+                <h3 class="cert-title">SANS FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics</h3>
+                <p class="cert-issuer">SANS Institute Training</p>
+                <div class="cert-meta">
+                    <span class="cert-id">CPE: 36 Credits</span>
+                </div>
+            </div>
+            <a href="Personal%20Website/Documents/SANSFOR508coursecompletion.pdf" class="cert-verify-badge" target="_blank" rel="noopener noreferrer" aria-label="View SANS FOR508 Completion Certificate">
+                <i class="fas fa-file-pdf"></i> View Certificate
+            </a>
+        </article>
+    </div>
+</section>
 
         <section id="contact" class="content-section">
             <h2>CONTACT</h2>
