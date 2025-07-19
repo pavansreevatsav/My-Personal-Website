@@ -1,0 +1,5 @@
+<!-- favicon.svg -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- The path defines the outer shield and then the inner 'P' as a cutout. -->
+  <path fill="#e53935" fill-rule="evenodd" d="M50,0 L95,20 L95,55 C95,85 50,100 50,100 C50,100 5,85 5,55 L5,20 L50,0 Z M45,40 L55,40 C57.76,40 60,42.24 60,45 C60,47.76 57.76,50 55,50 L45,50 L45,40 Z M35,30 L55,30 C63.28,30 70,36.72 70,45 C70,53.28 63.28,60 55,60 L45,60 L45,70 L35,70 L35,30 Z"/>
+</svg>
